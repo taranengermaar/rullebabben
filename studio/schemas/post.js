@@ -9,6 +9,12 @@ export default {
       title: "Title",
     },
     {
+      title: "Author",
+      name: "authors",
+      type: "array",
+      of: [{ type: "reference", to: { type: "author" } }],
+    },
+    {
       name: "excerpt",
       type: "text",
       title: "Excerpt",
