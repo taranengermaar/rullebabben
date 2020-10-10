@@ -8,3 +8,6 @@ Anmeldelser
     Opplevelse
     Terningkast eller rating 
     Suggestions for improvements
+
+array
+[ {value: <value>, title: <title>}

@@ -20,10 +20,18 @@ export default {
       title: "Excerpt",
     },
     {
-      name: "body",
-      type: "text",
-      title: "Body",
+      title: "Aktivitet",
+      name: "activityreference",
+      type: "array",
+      of: [{ type: "reference", to: { type: "activities" } }],
     },
+    {
+      title: "Kebab",
+      name: "kebabreference",
+      type: "array",
+      of: [{ type: "reference", to: { type: "kebab" } }],
+    },
+
     {
       name: "mainimage",
       type: "image",
@@ -41,6 +49,11 @@ export default {
           },
         },
       ],
+    },
+    {
+      name: "body",
+      type: "text",
+      title: "Body",
     },
   ],
 };
