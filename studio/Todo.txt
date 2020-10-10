@@ -1,0 +1,13 @@
+Blogg 
+Anmeldelser
+    Sjappe
+    Context/historie
+    Geotag / Adresse
+    Hvilken kebab
+    beskrivelse
+    Opplevelse
+    Terningkast eller rating 
+    Suggestions for improvements
+
+array
+[ {value: <value>, title: <title>}
