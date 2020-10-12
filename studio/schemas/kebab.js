@@ -7,6 +7,7 @@ export default {
       name: "title",
       type: "string",
       title: "Restaurant",
+      validation: (Rule) => Rule.required().warning("Husk tittel!"),
     },
     {
       title: "Hjemmeside",
@@ -58,7 +59,7 @@ export default {
     },
     {
       name: "body",
-      type: "text",
+      type: "richtext",
       title: "Anmeldelse",
     },
     {

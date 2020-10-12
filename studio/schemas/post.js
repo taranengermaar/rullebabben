@@ -52,7 +52,7 @@ export default {
     },
     {
       name: "body",
-      type: "text",
+      type: "richtext",
       title: "Body",
     },
   ],
