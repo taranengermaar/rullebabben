@@ -20,11 +20,8 @@ export default {
     },
     {
       title: "Terningkast",
-      name: "terningkast",
-      type: "array",
-      of: [
-        { type: "string", value: "1, 2, 3, 4, 5", title: "Valgt terningkast" },
-      ],
+      name: "rating",
+      type: "rating",
     },
     {
       title: "Prisnivå",

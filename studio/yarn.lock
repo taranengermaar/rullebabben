@@ -1346,6 +1346,16 @@
   version "2.0.1"
   resolved "https://registry.npmjs.org/@sanity/generate-help-url/-/generate-help-url-2.0.1.tgz#2ba4c8087bd1447737358a6b18ad6ea503252532"
 
+"@sanity/google-maps-input@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/@sanity/google-maps-input/-/google-maps-input-2.0.2.tgz#87f12271ffa88315802f888d8d5ece0bf011d77f"
+  dependencies:
+    "@sanity/field" "2.0.2"
+    "@sanity/react-hooks" "2.0.1"
+    "@sanity/types" "2.0.1"
+    classnames "^2.2.5"
+    rxjs "^6.5.3"
+
 "@sanity/image-url@^0.140.19":
   version "0.140.19"
   resolved "https://registry.npmjs.org/@sanity/image-url/-/image-url-0.140.19.tgz#6adfea7b7768a1708eba6bdcfe9eb0746d2bb1f9"
