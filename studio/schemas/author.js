@@ -6,17 +6,17 @@ export default {
     {
       name: "name",
       type: "string",
-      title: "Name",
+      title: "Navn",
     },
     {
       name: "photo",
       type: "image",
-      title: "Profile image",
+      title: "Profilbilde",
     },
     {
       name: "bio",
       type: "text",
-      title: "Biography",
+      title: "Biografi",
     },
   ],
 };

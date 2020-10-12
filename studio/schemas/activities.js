@@ -1,17 +1,12 @@
 export default {
-  name: "kebab",
+  name: "activities",
   type: "document",
-  title: "Kebab",
+  title: "Aktiviteter",
   fields: [
     {
       name: "title",
       type: "string",
-      title: "Restaurant",
-    },
-    {
-      title: "Hjemmeside",
-      name: "homepage",
-      type: "url",
+      title: "Tittel",
     },
     {
       name: "excerpt",
@@ -27,19 +22,29 @@ export default {
       ],
     },
     {
-      title: "Prisnivå",
-      name: "string",
-      type: "string",
+      title: "Hjemmeside",
+      name: "homepage",
+      type: "url",
     },
     {
-      name: "bacground",
-      type: "text",
-      title: "Om restauranten",
+      name: "price",
+      type: "string",
+      title: "Pris",
+    },
+    {
+      name: "openinghours",
+      type: "string",
+      title: "Åpningstider",
+    },
+    {
+      title: "Launchpad Location",
+      name: "location",
+      type: "geopoint",
     },
     {
       name: "mainimage",
       type: "image",
-      title: "Bilde",
+      title: "Main image",
       options: {
         hotspot: true,
       },
@@ -47,7 +52,7 @@ export default {
         {
           name: "alternativeText",
           type: "string",
-          title: "Bildetekst",
+          title: "Alternative text",
           options: {
             isHighlighted: true, // <-- make this field easily accessible
           },
@@ -55,20 +60,21 @@ export default {
       ],
     },
     {
-      name: "menu",
-      type: "string",
-      title: "Bestilt fra menyen",
-    },
-    {
       name: "body",
       type: "text",
       title: "Anmeldelse",
     },
     {
-      title: "Author",
-      name: "authors",
+      title: "Pros",
+      name: "pros",
       type: "array",
-      of: [{ type: "reference", to: { type: "author" } }],
+      of: [{ type: "string" }],
+    },
+    {
+      title: "Cons",
+      name: "cons",
+      type: "array",
+      of: [{ type: "string" }],
     },
   ],
 };
