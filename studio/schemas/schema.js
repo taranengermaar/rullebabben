@@ -10,6 +10,7 @@ import activities from "./activities";
 import rating from "./rating";
 import richtext from "./richtext";
 import calltoaction from "./calltoaction";
+import aboutus from "./aboutus";
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -24,5 +25,6 @@ export default createSchema({
     rating,
     richtext,
     calltoaction,
+    aboutus,
   ]),
 });
