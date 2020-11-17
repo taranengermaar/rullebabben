@@ -15,6 +15,14 @@ export default {
       of: [{ type: "reference", to: { type: "author" } }],
     },
     {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: {
+        source: "title",
+      },
+    },
+    {
       name: "excerpt",
       type: "text",
       title: "Excerpt",
