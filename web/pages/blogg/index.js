@@ -3,20 +3,31 @@ import { sanityClient, PortableText } from "../../sanity";
 export default function About(props) {
   console.log(props);
   return (
-    <div className={styles.main}>
-      <h1 className={styles.heading1}>Poster</h1>
-      <ul>
+    <div className="container mx-auto">
+      <h1 className="text-2xl font-black text-gray-900 pb-6 px-6 md:px-12">
+        Poster
+      </h1>
+      <div className="flex flex-wrap px-6">
         {props.posts.map(function (post) {
           return (
-            <li>
-              <a className={styles.link} href={`/blogg/${post.slug.current}`}>
-                {" "}
-                {post.title}
-              </a>
-            </li>
+            <div className="w-full  md:w-1/2   md:px-4 lg:px-6 py-5">
+              <div className="bg-white rounded hover:shadow-xl">
+                <a className={styles.link} href={`/blogg/${post.slug.current}`}>
+                  <div>
+                    <img
+                      src={post.mainImageUrl}
+                      alt=""
+                      className="h-56 w-full border-white border-8 rounded hover:opacity-25"
+                    />
+                  </div>
+
+                  <div class="px-4 py-4">{post.title}</div>
+                </a>
+              </div>
+            </div>
           );
         })}
-      </ul>
+      </div>
       <a className={styles.link} href="/">
         Tilbake til forsiden
       </a>
@@ -24,7 +35,9 @@ export default function About(props) {
   );
 }
 export async function getStaticProps() {
-  const data = await sanityClient.fetch("*[_type == 'post']");
+  const data = await sanityClient.fetch(
+    "*[_type == 'post'] {title, slug, 'mainImageUrl':mainimage.asset->url}"
+  );
   console.log(data);
   return { props: { posts: data } };
 }
