@@ -40,7 +40,13 @@ export const PortableText = createPortableTextComponent({
   ...config,
   // Serializers passed to @sanity/block-content-to-react
   // (https://github.com/sanity-io/block-content-to-react)
-  serializers: {},
+  serializers: {
+    types: {
+      calltoaction: function (props) {
+        return <a href={props?.node?.url}>{props?.node?.text}</a>;
+      },
+    },
+  },
 });
 
 // Set up the client for fetching data in the getProps page functions
