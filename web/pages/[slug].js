@@ -1,5 +1,5 @@
-import styles from "../../styles/Home.module.css";
-import { sanityClient, PortableText } from "../../sanity";
+import styles from "../styles/Home.module.css";
+import { sanityClient, PortableText } from "../sanity";
 export default function BlogPost(props) {
   console.log(props);
   return (

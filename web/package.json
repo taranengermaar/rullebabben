@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@sanity/image-url": "^0.140.19",
     "next": "^10.0.3",
     "next-sanity": "^0.1.7",
     "react": "17.0.1",
